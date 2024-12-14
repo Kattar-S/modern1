@@ -1,0 +1,439 @@
+#!/bin/bash
+dnf install -y httpd
+systemctl enable httpd
+systemctl start httpd
+echo '<html><h1>Hello From Your Web Server!</h1></html>' > /var/www/html/index.html
+
+
+Cloud Computing Practical Assignment No 1
+Working and Implementation of Infrastructure as a service
+Launch EC2 Instance (Windows) - AWS Platform.
+Prepare Screenshots file. Write down the steps to launch EC2 instance (Windows)
+Step 1: Select the Compute Service and in that select EC2.
+Step 2: Then Say ‘Launch Instance’.
+Step 3: Give the name to the instance.
+Step 4: Select the AMI as Windows.
+Step 5: Create Key pair.
+Step 6: Now launch the instance
+Step 7: Select the checkbox of the instance created and which should be in running state and then say connect.
+Step 8: Download the remote desktop file.
+Step 9: Upload the private key created earlier.
+Step 10: Decrypt the password and copy in the remote desktop file which was earlier downloaded.
+Step 11: Accept the permission and proceed.
+Step 12: Later the Virtual Machine of Windows instance is created as follows.
+Step 13: Select the instance type as ‘Terminate’ from instance state.
+Step 14: Terminate the instance later.
+Step 15: At the end logout from the account of AWS.
+
+
+Cloud Computing Practical Assignment No 2 
+Working and Implementation of Infrastructure as a service 
+Launch EC2 Instance (Linux)- AWS Platform. Prepare Screenshots file 
+Write down the steps to launch the EC2 instance (Linux). 
+Step 1: Select the Compute Service and in that select EC2.
+Step 2: Then Say ‘Launch Instance’.
+Step 3: Give the name to the instance.
+Step 4: Select the AMI as Linux.
+Step 5: Create Key pair by giving unique name for the key.
+Step 6: Now launch the instance
+Step 7: Select the checkbox of the instance created and which should be in running state and then say connect.
+Step 8: Later the Virtual Machine of Linux instance is created as follows.
+Step 9: Select the instance type as ‘Terminate’ from instance state.
+Step 10: Terminate the instance later and wait for the instance state to change into ‘Terminated’.
+Step 11: At the end logout from the account of AWS.
+
+Cloud Computing Practical Assignment No 3
+Working and Implementation of Infrastructure as a service 
+Create an EC2 Linux Instance, Install an Apache Web Server and run the Hello World page by typing commands on a virtual machine.
+(Use AWS Platform)
+Prepare a Screenshots file and write down the steps and commands used.
+Step 1: Select the Compute Service and in that select EC2. 
+Step 2: Then Say ‘Launch Instance’.
+Step 3: Give the name to the instance.
+Step 4: Select the AMI as Linux.
+Step 5: Select the instance type as ‘t2. micro’.
+Step 6: Create Key pair by giving unique name for the key.
+Step 7: At first don’t allow the HTTP and HTTPS traffic instead launch the instance.
+Step 8: The instance is created.
+Step 9: Select the checkbox of the instance created and which should be in running state and then say connect.
+Step 10: Now copy the IPv4 Address and paste it in new browser, it will not work at first but after enabling the traffic it will work.
+Step 11: Say ‘connect’ in the EC2 console tab.
+Step 12: The Linux instance is successfully created.
+Step 13: Now write the commands in this instance.
+Step 14 Now select the type as ‘HTTP’ and source as ‘AnywhereIPv4’ and again say add rule to add next rule for ‘HTTPS’ as type and ‘AnywhereIPv4’ as source and they select save rules.
+Step 16: Now go back to the browser where the IPv4 address was copied earlier and refresh the page.
+Step 17: Now terminate the instances
+Step 18: Click Sign out
+
+Cloud Computing Practical Assignment No 4 
+Working and Implementation of Infrastructure as a service 
+Task 1: Launch Your Amazon EC2 Instance.  
+Write the shell script in User Data box. 
+The script will: 
+• Install an Apache web server (httpd) 
+• Configure the web server to automatically start on boot 
+• Run the Web server once it has finished installing 
+• Create a simple web page 
+Task 2: Monitor Your Instance 
+Task 3: Update Your Security Group and Access the Web Server 
+Task 4: Resize Your Instance: Instance Type and EBS Volume 
+Task 5: Test Termination Protection.
+(Use AWS Platform) 
+Prepare a Screenshots file and write down the steps. 
+
+ Task 1: Launch Your Amazon EC2 Instance. 
+Step 1: Select the Compute Service and in that select EC2.
+ Step 2: Choose the ‘Launch instance’ menu and select Launch instance.
+ Step 3: Give the name as Web Server.
+ Step 4: Select the AMI as Linux.
+ Step 5: Select the instance type as t2.micro.
+ Step 6: Give the key name.
+ Step 7: In Network Setting choose edit.
+ Step 8: In firewall security group change the security group name and description.
+ Step 9: In Inbound security group rules there is one rule Remove this rule.
+Step 10: In Advanced details enable the termination protection setting.
+ Step 11: In User data section copy the commands and then say launch instance. 
+ Task 2: Monitor Your Instance 
+Step 12: Click in action tab and select monitor and troubleshoot and then select Get system log.
+ Step 13: After monitoring the system log say cancel and then again go to action tab and select monitor and troubleshoot and then say Get Instance screenshot.
+ Task 3: Update Your Security Group and Access the Web Server
+Step 15: Now select the web server and copy the IPv4 address in new browser and press enter it will show the error message.
+Step 16: Now go to security group and add rule and then save the rules those are added.
+ Step 17: Now go to the browser where the IPv4 address was copied and refresh it, it will show the following message.
+Task 4: Resize Your Instance: Instance Type and EBS Volume 
+Step 18: Now stop the selected instance.
+ Step 19: Now go to Actions menu and select ‘instance settings’ and in that select ‘change instance type’
+ Step 20: Now select the instance type as t2.small and say apply. 
+ Step 21: Now go again in Actions tab and select instance settings and then select Change stop protection.
+ Step 22: Say enable and then save it.
+ Step 23: Now go to storage menu and then select the volume ID and then go to actions tab and select modify volume.
+Step 24: Now change the size from 8 to 10 and say modify.
+Step 25: Now start the resized instance again.
+Step 26: Now go to search bar and search for EC2 console and go to instances and select the web server.
+Task 5: Test Termination Protection
+Step 27: Now go to instance state and select stop instance.
+Step 28: It will show this message as we have enabled the stop protection.
+Step 29: Now go again in action menu and select change stop protection and remove the enabled checkbox which is selected and then say save.
+Step 30: Now go back again to instance menu and stop the web server instance.
+ Step 31: At the end sign out from this console and end the learner lab.
+ 
+
+
+Cloud Computing Practical Assignment No 5
+Working and Implementation of Infrastructure as a service 
+Launch Your Amazon EC2 Instance. Write the shell script in the User Data box. 
+The script will: 
+• Install an Apache web server (httpd) 
+• Configure the web server to automatically start on boot 
+• Run the Web server once it has finished installing 
+• Create a simple web page 
+Update Your Security Group and Access the Web Server. 
+(Use AWS Platform) 
+Prepare a Screenshots file and write down the steps. 
+Make a single word or PDF file
+
+ Task 1: Launch Your Amazon EC2 Instance. 
+Step 1: Select the Compute Service and in that select EC2.
+ Step 2: Choose the ‘Launch instance’ menu and select Launch instance.
+Step 3: Give the name as Web Server1.
+ Step 4: Select the AMI as Linux.
+Step 5: Select the instance type as t2.micro.
+Step 6: Give the key name.
+Step 7: In Network Setting choose edit.
+Step 8: In firewall security group change the security group name and description.
+Step 9: In Inbound security group rules there is one rule Remove this rule.
+ Step 10: In Advanced details enable the termination protection setting.
+Step 11: In User data section copy the commands and then say launch instance.
+Task 2: Update Your Security Group and Access the Web Server
+Step 12: Now select the web server and copy the IPv4 address in new browser and press enter it will show the error message.  
+Step 13: Now go to security group and add rule and then save the rules those are added.
+ Step 14: Now go to the browser where the IPv4 address was copied and refresh it, it will show the following message.
+ Step 15: At the end sign out from this console and end the learner lab.
+ 
+ 
+ Cloud Computing Practical Assignment No 6 
+Working and Implementation of Identity and Access Management (Using AWS) 
+Prepare Screen shots file and write down the steps. 
+
+Step 1: Search for IAM in search bar next to services tab.
+Step 2: In the navigation pane on the left, choose Users
+Step 3: These are the users which are already been created.
+Step 4: Click on user-1 link and it will open the summary page in which there are no permissions given to user-1
+Step 5: Now go to groups, there are no groups created for user-1.
+Step 6: Now go to the navigation pane on the left, choose User groups.
+Step 7: Now click on EC2 Support link and go in permissions tab it will show the summary page and then click on ‘+’ sign in policy name tab and view the contents in it.
+Step 8: Now click on ‘-’ to close the contents which are visible.
+Step 9: Now click on S3 Support link from user groups and go in permissions tab it will show the summary page and then click on ‘+’ sign in policy name tab and view the contents in it.
+Step 10: Now click on ‘-’ to close the contents which are visible.
+Step 11: Now click on EC2-admin link from user groups and go in permissions tab it will show the summary page and then click on ‘+’ sign in policy name tab and view the contents in it.
+Step 12: Now click on ‘-’ to close the contents which are visible.
+Step 13: Now in the left navigation pane, choose User groups and click on S3-Support group link and click on ‘Add users’ to add users in it.
+Step 14: Select user-1 and then click on Add users.
+Step 15: Now the user-1 is been added to S3-Support group.
+Step 16: Now in the left navigation pane, choose User groups and click on EC2-Support group link and click on ‘Add users’ to add users in it.
+Step 17: Select user-2 and then click on Add users.
+Step 18: Now the user-2 is been added to EC2-Support group.
+Step 19: Now in the left navigation pane, choose User groups and click on EC2-Admin group link and click on ‘Add users’ to add users in it.
+Step 20: Select user-3 and then click on Add users.
+Step 21: Now the user-3 is been added to EC2-Admin group.
+Step 22: Now go to dashboard and copy the Sign-in link provided on the right side.
+Step 23: Paste this link in New incognito tab of google chrome.
+Step 24: Now sign in using user-1 credentials.
+Step 25: Now search for S3 in search bar next to services.
+Step 26: Select the name of the bucket that exists in the account and browse the contents. Since your user is part of the S3-Support Group, they have permission to view a list of Amazon S3 buckets and the contents.
+Step 27: Now search for EC2 console and see if you have permission or not. It will give error messages as it states You are not authorized to perform this operation. This is because this user has not been granted any permissions to access Amazon EC2.
+Step 28: Now sign out of user-1.
+Step 29: Now sign in as user-2 again in the same link which was earlier copied.
+Step 30: Now go to instances and select the instance as Labhost and stop that instance. It will give error message as user-2 only has read only permission.
+Step 31: Now sign out of user-2.
+Step 32: Now sign in again as user-3 from the link that was earlier copied and choose instances and select the instance as Labhost.
+Step 33: Now say stop instance, the instance will stop as user-3 is an EC2 Administrator, so you now have permissions to Stop the Amazon EC2 instance.
+Step 34: Now sign out of user-3 and close the private window tab.
+Step 35: Now sign out of your account and end the lab.
+
+Cloud Computing Practical Assignment No 7 
+Practical Implementation of Storage as a Service 
+Create an S3 Bucket, upload a file to S3 Bucket, retrieve a File from S3 Bucket, delete a File from S3 Bucket using AWS. 
+Prepare Screen shots file and also write down the steps. 
+
+Step 1: Select the Storage Service and in that select S3 instance.
+Step 2: It will show this page then click create bucket.
+Step 3: Now give the name to the bucket and select ACLs enabled.
+Step 4: And then click create bucket.
+Step 5: This page will appear and now select the blue text and click on it to upload the file.
+Step 6: Upload the file here by clicking upload.
+Step 7: Now click on add files and then click upload.
+Step 8: Now click on house.png, following page will appear (change the permissions first)
+Step 9: Now click on object url and allow the permission for public read and then this image will appear.
+Step 10: Now empty the bucket.
+Step 10: Now delete the bucket.
+Step 12: Now sign out and end the lab.
+
+Cloud Computing Practical Assignment No 8 
+Practical Implementation of Storage as a Service 
+Hosting a static website in AWS using S3. 
+Prepare Screen shots file and also write down the steps. 
+
+Step 1: Select the Storage Service and in that select S3 instance.
+Step 2: It will show this page click on create a bucket.
+Step 3: Now give the name to the bucket and select ACLs enabled.
+Step 4: Now say create bucket and after successful creation of bucket, click on bucket name.
+Step 5: Now click on upload and add files.
+Step 6: Now click upload.
+Step 7: Now click on the link as example.html
+Step 8: Remove this from permissions and say save changes and enter ‘confirm’ to confirm.
+Step 9: Grant access from here and say ‘I understand’ and then say save changes.
+Step 10: Now click on the object url link.
+Step 11: This will appear.
+Step 12: Now empty the bucket.
+Step 13: Now delete the bucket.
+Step 14: Now sign out and end the lab.
+
+Cloud Computing Practical Assignment No 9
+Working and Implementation of Platform as a service.
+AWS Elastic Beanstalk: Use this tool to upload sample code for web apps. (AWS handles the
+deployment, provisioning and load balancing Prepare Screen shots file and also write down the steps.
+________________________________________
+Step 1: At first create key pair in EC2 and then go to Elastic Bean Stalk in services.
+Step 2: Go to dashboard and then select environments.
+Step 3: Say create environment and select web server environment and then configure following settings.
+Step 4: Following screen will appear so configure following settings and say submit
+Step 5: Now all the events will be created as its own.
+Step 6: The following screen will appear which means the practical has been successfully done.
+Step 7: Delete the application.
+Step 7: Environment is cleaned and then release the elastic ip address if any.
+
+Cloud Computing Practical Assignment No 9
+Installation and configuration of cloud Hadoop and demonstrate simple query. 
+Prepare Screen shots file and also write down the steps.  
+Make single word or PDF file . 
+Step 1 : First of all go to the services and in that select EMR to open the EMR console. 
+ Step 2 : Click on Create Cluster. 
+Step 3 : Fill the cluster name and select Core Hadoop.                                        Step 4 : Configure the following steps.  
+ 
+5 Now create a new Key Pair and then choose the created key pair. 
+Step 6 : Choose emr_defaultrole and emr_ec2_defaultrole and then click on Create Cluster. 
+Step: 7 You see the cluster is successfully created. 
+Step 8 : Now open the Putty app and load it. 
+Step.9Now login as ec2-user.
+ 
+Step10: Using below commands create the database and run the query. 
+ Step11: Enter a command --à sudo hive 
+Step 12 : In the last Terminate the created clusters and Instances and then sign out from your aws account. 
+ 
+Cloud Computing Practical Assignment No 11
+Write a program for web feed.
+Prepare a Screen shots file and also write down the steps.
+Make single word or PDF file
+________________________________________
+Step 1: Launch the EC2 instance and then connect by which following screen will appear. 
+Step 2: Install python manually by following commands.
+Step 3: Write the following commands in vi.
+Step 4: Then press Esc and shift+: and then wq following screen will appear.
+Step 5: Terminate the instance and then end lab.
+
+Cloud Computing Practical Assignment No 12 
+Launch the RDS Instance (AWS) and connect. 
+Prepare a Screen shots file and write down the steps. 
+Do the following tasks
+1) Use Amazon RDS to create a MySQL DB Instance
+Once the database instance creation is complete and the status changes to available, you can connect to a database on the DB instance using any standard SQL client. Download MySQL Workbench, which is a popular SQL client. 
+connect to the database you created using MySQL Workbench.
+2) Launch an EC2 instance, launch an RDS instance, and connect RDS from the EC2 instance.
+For solving Use the links
+•	https://aws.amazon.com/getting-started/hands-on/create-mysql-db/
+•	https://blog.saeloun.com/2023/05/08/connect-aws-rds-with-ec2/
+Commands to use for second task:
+to install the MySQL command line client run the following commands. Press Y when prompted
+sudo dnf update -y
+sudo dnf install mariadb105-server
+ To connect with the DB instance, copy the endpoint from the Connectivity & security tab on the DB-identifier page.
+ Enter the following command to connect with the MySQL instance. Replace the endpoint with the endpoint of the DB instance and enter the master password when prompted for password 
+mysql -h endpoint -P 3306 -u admin -p
+After successfully connecting EC2 instance with the RDS DB instance,to verify this we can run some of the MySQL commands
+show databases
+create database test;
+use test
+Make a single Word or PDF file.
+
+Step 1: Go to database menu and select RDS. 
+Step 2: Now select Create databases.
+Step 3: Configure the settings as shown below:
+Step 4: Give the settings as given below and click create database.Step 5: Wait for the status to be available
+Step 6: Now go to MySQL workbench and connect to DB
+Step 7: This screen will appear
+Step 8: Now create instance and connect using following commands.
+Step 9: The connected database screen will appear.
+Step 10: Now delete the instance and databases.
+Step 10: Sign out and end lab.
+
+Cloud Computing Practical Assignment No:13 
+Working with EBS
+• Create an Amazon EBS volume 
+• Attach and mount your volume to an EC2 instance 
+• Create a snapshot of your volume 
+• Create a new volume from your snapshot 
+• Attach and mount the new volume to your EC2 instance
+
+
+Task 1: Create a New EBS Volume
+Step 1: Go to compute services and select EC2.
+Step 2: Go to left navigation pane and select volumes.
+Step 3: Click create volume.
+Step 4: Select volume type as ‘General purpose SSD (gp2)’ and size as 1Step 5: Now give the key and value name in tag and say create volume.
+Step 6: The new volume is been created now which is available.Task 2: Attach the Volume to an Instance
+Step 7: Now select the new volume created and then go to actions tab and say attach volume.
+Step 8: Now select the instance from instance info and set the device name to  ‘/dev/sdf ‘ and then say attach volume.
+Task 3: Connect to Your Amazon EC2 Instance
+Step 9: Now go to instance state and select the lab and then say connect the following screen will open.
+Task 5: Create an Amazon EBS Snapshot
+Step 10: Now go volumes tab and then select the created volume and go to actions tab and then select create snapshot.
+Step 11: Add tag and give key and value and then say create snapshot.Step 12: Now go to left navigation pane and choose snapshots the following screen will display.
+Step 13: Now again go to EC2 instance connect and type the commands to delete the file.
+Task 6: Restore the Amazon EBS Snapshot
+Step 14: Now go to EC2 console and select the created snapshot and then go to actions and then select create volume from snapshot.
+Step 15: Now select add tag and then give key and value and then create volume.Step 16: Now go back to volumes tab in left navigation pane and select the restored volume and then go to actions tab and select attach volume.
+Step 17: Now go to EC2 instance connect and write command for second volume created to mount it.
+Step 18: Now detach the volume and then delete it.
+Step 19: Now delete the snapshots as well that was earlier created.
+Step 20: At the end terminate the instance and sign out and then end lab.
+
+
+
+
+
+Cloud Computing Practical Assignment No: 14 
+Implementation of VPC using AWS. 
+Prepare Screen shots file and also write down the steps. 
+Make single word or PDF file.
+
+Task 1: Create Your VPC
+Step 1: Search for and choose VPC to open the VPC console.
+Step 2: Choose the VPC dashboard link which is towards the top left of the console and then choose Create VPC. 
+Step 3: Configure the VPC details in the VPC settings panel on the left as done below:
+Step 4: In the Preview panel on the right, confirm the settings you have configured.
+Step 5: At the bottom of the screen, choose Create VPC.
+Step 6: It will look like this then choose View VPC.
+Task 2: Create Additional Subnets
+Step 7: In the left navigation pane, choose Subnets and then choose create subnet then configure as shown below and click create subnet. (Subnet name: lab-subnet-public2)
+Step 8: Again, choose Create subnet then configure as done below and click create subnet. (Subnet name: lab-subnet-private2)
+Step 9: In the left navigation pane, choose Route tables. Select the lab-rtb-private1-us-east-1a route table.
+Step 10: Choose the Subnet associations tab. In that Explicit subnet associations panel, choose Edit subnet associations.
+Step 11: Leave lab-subnet-private1-us-east-1a selected, but also select lab-subnet-private2 and click save associations.
+Step 12: Select the lab-rtb-public route table (and deselect any other subnets).
+Step 13: Choose the Subnet associations tab. In that Explicit subnet associations panel, choose Edit subnet associations.
+Step 14: Leave lab-subnet-public1-us-east-1a selected, but also select lab-subnet-public2 and click save associations.
+Task 3: Create a VPC Security Group
+Step 15: In the left navigation pane, choose Security groups and click choose “Create security group” and then configure: Security group name as “Web Security Group” and Description as “Enable HTTP access”. VPC: Remove all vpc and select lab-vpc.
+Step 16: In the Inbound rules pane, choose Add rule. Configure the following settings as done below and click create security group.
+Task 4: Launch a Web Server Instance
+Step 17: Search and choose EC2 to open the EC2 console.
+Step 18: Click launch instance.
+Step 19: Name the instance and select the key pair name and select vockey.
+Step 20: Configure the network settings as done below:
+Step 21: Configure the instance, choose Select existing security group. For Common security groups, select Web Security Group.
+Step 22: Expand the Advanced details panel. Scroll to the bottom of the page and then paste the code as done below:
+Step 23: At the bottom of the Summary panel on the right side of the screen choose Launch instance.
+Step 24: Click view all instances and select the created instance.
+Step 25: Copy the Public IPv4 DNS value shown in the Details tab at the bottom of the page.
+Step 26: Open a new web browser tab, paste the Public DNS value and press Enter.
+Step 27: View the web page displaying the AWS logo and instance meta-data values.
+Step 28: Stop and terminate all the instances.Step 29: Sign out and end the lab.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
